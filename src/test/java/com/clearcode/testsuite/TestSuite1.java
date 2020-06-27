@@ -20,7 +20,7 @@ import dataProvider.LoginData;
 public class TestSuite1 extends TestSetup {
 
 	@Test(dataProvider="RealEstate",dataProviderClass=LoginData.class)
-	public void RealEstate(String Description , String nameid , String slugid , String data[] , String Descriptions) throws InterruptedException {
+	public void RealEstate(String Description , String nameid , String slugid , String data , String Descriptions) throws InterruptedException {
 		
 //		wdu.mouseOver(MenuBar.patient_men
 //		wdu.click(MenuBar.newPatient_menu);
@@ -42,10 +42,11 @@ public class TestSuite1 extends TestSetup {
 		wdu.click(Regions.Regions_clk);
 		wdu.type(Regions.Fname_ip,nameid);
 		wdu.type(Regions.slug_ip, slugid);
-		wdu.selectByVisibleText(Regions.Regionselect, data[0]);
+		wdu.selectByVisibleText(Regions.Regionselect, data);
 		wdu.type(Regions.Desc, Descriptions);
 		wdu.mouseOver(DashBoard.properties_mv);
-		wdu.click(Propertysettings.Propertysettings);	
+		wdu.click(Propertysettings.Propertysettings);
+		
 		}}
 
 

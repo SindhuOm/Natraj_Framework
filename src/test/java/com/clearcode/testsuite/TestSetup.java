@@ -21,11 +21,13 @@ public class TestSetup {
 	@BeforeClass
 	public void launch() {
 		wdu.initialize();
+		
 	}
 	
 	@BeforeMethod
 	public void loadUrl() {
 		wdu.launchUrl();
+		
 	}
 	
 	@AfterClass

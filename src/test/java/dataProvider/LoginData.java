@@ -8,7 +8,7 @@ public class LoginData {
 	int a=2;
 	@DataProvider
 	public Object[][] RealEstate(){
-		return ExcelUtils.getData("TestData.xls", "Realestate");
+		return ExcelUtils.getData("TestData.xls", "NegativeLogin");
 	}
 //	
 //	@DataProvider
